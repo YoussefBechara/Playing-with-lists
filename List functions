@@ -1,0 +1,35 @@
+#method1
+
+def find_bignumb():
+    list = [9, 4, 5, 33, 2467, 67, 1, 7, 34]
+    sorted_list = sorted(list)
+    biggest_number = sorted_list[-1]
+    print(biggest_number)
+
+#method2
+def method2():
+    list1 = [9, 4, 5, 33, 2467, 67, 1, 7, 34]
+    biggest_number = 0
+    for i in list1:
+        if i > biggest_number:
+            biggest_number = i
+    print(biggest_number)
+
+#nested loops
+def nestedloops():
+    for x in range(3):
+        for y in range(3):
+            print(x, y)
+
+#find_prime number
+def find_prime():
+    num = int(input('Number: '))
+    for i in range(2, num):
+        if num % i == 0:
+            print(f'{num} is not a prime number.')
+            break
+        else:
+            print(f'{num} is a prime number.')
+            break
+
+find_prime()
